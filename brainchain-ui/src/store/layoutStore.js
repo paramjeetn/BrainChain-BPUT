@@ -23,34 +23,40 @@ const DEFAULT_ACTIVE_MODULES = [
 
 export const DEFAULT_LAYOUTS = {
   lg: [
-    { i: 'scorecard', x: 0, y: 0, w: 12, h: 4, minW: 6, minH: 3 },
-    { i: 'energy', x: 0, y: 4, w: 6, h: 8, minW: 4, minH: 6 },
-    { i: 'water', x: 6, y: 4, w: 6, h: 8, minW: 4, minH: 6 },
-    { i: 'air_quality', x: 0, y: 12, w: 6, h: 8, minW: 4, minH: 6 },
-    { i: 'waste', x: 6, y: 12, w: 6, h: 8, minW: 4, minH: 6 },
-    { i: 'traffic', x: 0, y: 20, w: 6, h: 7, minW: 4, minH: 5 },
-    { i: 'assets', x: 6, y: 20, w: 6, h: 7, minW: 4, minH: 5 },
-    { i: 'safety', x: 0, y: 27, w: 12, h: 6, minW: 6, minH: 4 },
+    { i: 'zone_map',    x: 0, y: 0, w: 8, h: 10, minW: 6, minH: 8 },
+    { i: 'scorecard',   x: 8, y: 0, w: 4, h: 5,  minW: 3, minH: 4 },
+    { i: 'energy',      x: 8, y: 5, w: 4, h: 5,  minW: 3, minH: 4 },
+    { i: 'water',       x: 0, y: 10, w: 3, h: 5, minW: 3, minH: 4 },
+    { i: 'waste',       x: 3, y: 10, w: 3, h: 5, minW: 3, minH: 4 },
+    { i: 'air_quality', x: 6, y: 10, w: 3, h: 5, minW: 3, minH: 4 },
+    { i: 'traffic',     x: 9, y: 10, w: 3, h: 5, minW: 3, minH: 4 },
+    { i: 'safety',      x: 0, y: 15, w: 3, h: 5, minW: 3, minH: 4 },
+    { i: 'assets',      x: 3, y: 15, w: 3, h: 5, minW: 3, minH: 4 },
+    { i: 'ai_insights', x: 0, y: 20, w: 12, h: 10, minW: 12, minH: 8 },
   ],
   md: [
-    { i: 'scorecard', x: 0, y: 0, w: 10, h: 4, minW: 5, minH: 3 },
-    { i: 'energy', x: 0, y: 4, w: 5, h: 8, minW: 4, minH: 6 },
-    { i: 'water', x: 5, y: 4, w: 5, h: 8, minW: 4, minH: 6 },
-    { i: 'air_quality', x: 0, y: 12, w: 5, h: 8, minW: 4, minH: 6 },
-    { i: 'waste', x: 5, y: 12, w: 5, h: 8, minW: 4, minH: 6 },
-    { i: 'traffic', x: 0, y: 20, w: 5, h: 7, minW: 4, minH: 5 },
-    { i: 'assets', x: 5, y: 20, w: 5, h: 7, minW: 4, minH: 5 },
-    { i: 'safety', x: 0, y: 27, w: 10, h: 6, minW: 5, minH: 4 },
+    { i: 'zone_map',    x: 0, y: 0, w: 8, h: 8 },
+    { i: 'scorecard',   x: 0, y: 8, w: 4, h: 5 },
+    { i: 'energy',      x: 4, y: 8, w: 4, h: 5 },
+    { i: 'water',       x: 0, y: 13, w: 4, h: 5 },
+    { i: 'waste',       x: 4, y: 13, w: 4, h: 5 },
+    { i: 'air_quality', x: 0, y: 18, w: 4, h: 5 },
+    { i: 'traffic',     x: 4, y: 18, w: 4, h: 5 },
+    { i: 'safety',      x: 0, y: 23, w: 4, h: 5 },
+    { i: 'assets',      x: 4, y: 23, w: 4, h: 5 },
+    { i: 'ai_insights', x: 0, y: 28, w: 8, h: 10 },
   ],
   sm: [
-    { i: 'scorecard', x: 0, y: 0, w: 6, h: 4 },
-    { i: 'energy', x: 0, y: 4, w: 6, h: 7 },
-    { i: 'water', x: 0, y: 11, w: 6, h: 7 },
-    { i: 'air_quality', x: 0, y: 18, w: 6, h: 7 },
-    { i: 'waste', x: 0, y: 25, w: 6, h: 7 },
-    { i: 'traffic', x: 0, y: 32, w: 6, h: 7 },
-    { i: 'assets', x: 0, y: 39, w: 6, h: 7 },
-    { i: 'safety', x: 0, y: 46, w: 6, h: 6 },
+    { i: 'zone_map',    x: 0, y: 0, w: 4, h: 6 },
+    { i: 'scorecard',   x: 0, y: 6, w: 4, h: 5 },
+    { i: 'energy',      x: 0, y: 11, w: 4, h: 5 },
+    { i: 'water',       x: 0, y: 16, w: 4, h: 5 },
+    { i: 'waste',       x: 0, y: 21, w: 4, h: 5 },
+    { i: 'air_quality', x: 0, y: 26, w: 4, h: 5 },
+    { i: 'traffic',     x: 0, y: 31, w: 4, h: 5 },
+    { i: 'safety',      x: 0, y: 36, w: 4, h: 5 },
+    { i: 'assets',      x: 0, y: 41, w: 4, h: 5 },
+    { i: 'ai_insights', x: 0, y: 46, w: 4, h: 10 },
   ],
 }
 
@@ -159,6 +165,7 @@ export const useLayoutStore = create(
     }),
     {
       name: 'brainchain-dashboard-layout',
+      version: 2, // Bump version to force reset
     }
   )
 )

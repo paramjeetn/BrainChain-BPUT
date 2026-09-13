@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Sparkles, Layers, Building2, SlidersHorizontal, Info, Brain,
+  Sparkles, Layers, Building2, SlidersHorizontal, Info, Brain, GripHorizontal,
 } from 'lucide-react';
 import { useFacilityStore } from '../../store/useFacilityStore';
 import insightsData from '../../demo-data/insights.json';
@@ -76,25 +76,25 @@ export function AIInsightPanel() {
   return (
     <aside className="w-full max-w-full shrink-0 bg-white border border-gray-200 rounded-2xl h-full flex flex-col overflow-hidden text-gray-900 select-none shadow-sm hover:shadow-md transition-shadow">
       {/* Header */}
-      <div className="p-4 md:p-5 pb-3 border-b border-gray-100 bg-white sticky top-0 z-20">
+      <div className="p-4 md:p-5 pb-3 border-b border-gray-100 bg-white sticky top-0 z-20 group">
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-200 flex items-center justify-center text-emerald-700">
               <Sparkles className="w-4 h-4" />
             </div>
-            <div>
-              <h2 className="text-sm font-bold text-gray-900 tracking-wide">AI Recommendations</h2>
-              <p className="text-[11px] text-gray-400">Cognitive decision support engine</p>
+            <div className="flex flex-col">
+              <h2 className="text-[15px] font-bold tracking-tight text-gray-900 leading-tight">AI Recommendations</h2>
+              <span className="text-[11px] font-medium text-gray-400">Cognitive decision support engine</span>
             </div>
           </div>
-
-          {/* Facility tag — shows correct name */}
-          <div
-            className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-gray-50 border border-gray-200 text-[11px] text-gray-600 font-medium max-w-[160px]"
-            title={facilityName}
-          >
-            <Building2 className="w-3 h-3 text-emerald-600 shrink-0" />
-            <span className="truncate">{facilityName}</span>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-50 border border-gray-200 rounded-md shadow-sm">
+              <Building2 className="w-3.5 h-3.5 text-gray-500" />
+              <span className="text-[11px] font-bold text-gray-700 tracking-tight">{facilityName}</span>
+            </div>
+            <div className="panel-drag-handle opacity-0 group-hover:opacity-100 p-1.5 -mr-1.5 rounded-md cursor-grab active:cursor-grabbing text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-all" title="Drag to reorder">
+              <GripHorizontal className="w-5 h-5" />
+            </div>
           </div>
         </div>
       </div>

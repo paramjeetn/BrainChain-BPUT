@@ -1,10 +1,27 @@
 const express = require('express');
 const cors = require('cors');
 const db = require('./db');
+const cron = require('node-cron');
+const { spawn } = require('child_process');
+const path = require('path');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// Schedule ML Pipeline to run every 10 minutes
+cron.schedule('*/10 * * * *', () => {
+  console.log('[Cron] Triggering ML Pipeline...');
+  const pythonProcess = spawn('python', [path.join(__dirname, 'ml', 'ml_pipeline.py')]);
+  
+  pythonProcess.stdout.on('data', (data) => {
+    console.log(`[ML Pipeline]: ${data.toString().trim()}`);
+  });
+  
+  pythonProcess.stderr.on('data', (data) => {
+    console.error(`[ML Pipeline Error]: ${data.toString().trim()}`);
+  });
+});
 
 // Get all facilities
 app.get('/api/facilities', (req, res) => {
@@ -22,7 +39,7 @@ app.post('/api/facilities', (req, res) => {
   }
   
   try {
-    const stmt = db.prepare('INSERT INTO facilities (id, name, location, type, activeModules) VALUES (?, ?, ?, ?, ?)');
+    const stmt = db.prepare('INSERT OR REPLACE INTO facilities (id, name, location, type, activeModules) VALUES (?, ?, ?, ?, ?)');
     stmt.run(id, name, location, type, JSON.stringify(activeModules || []));
     res.status(201).json({ success: true, facility: { id, name, location, type, activeModules } });
   } catch (err) {

@@ -16,6 +16,7 @@ import AssetPanel from './components/modules/AssetPanel'
 import SafetyPanel from './components/modules/SafetyPanel'
 import ScorecardPanel from './components/modules/ScorecardPanel'
 import AIInsightPanel from './components/ai/AIInsightPanel'
+import ZoneMapPanel from './components/modules/ZoneMapPanel'
 import { ModuleSummaryCard } from './components/modules/ModuleSummaryCard'
 import OnboardingFlow from './components/onboarding/OnboardingFlow'
 import LandingPage from './pages/LandingPage'
@@ -30,6 +31,7 @@ const PANEL_COMPONENTS = {
   safety: SafetyPanel,
   assets: AssetPanel,
   asset_utilization: AssetPanel,
+  zone_map: ZoneMapPanel,
 }
 
 const DEFAULT_LAYOUTS = {
@@ -38,31 +40,33 @@ const DEFAULT_LAYOUTS = {
     { i: 'energy',            x: 3,  y: 0, w: 3, h: 5 },
     { i: 'water',             x: 6,  y: 0, w: 3, h: 5 },
     { i: 'waste',             x: 9,  y: 0, w: 3, h: 5 },
-    { i: 'air_quality',       x: 0,  y: 5, w: 3, h: 5 },
-    { i: 'traffic',           x: 3,  y: 5, w: 3, h: 5 },
-    { i: 'safety',            x: 6,  y: 5, w: 3, h: 5 },
-    { i: 'assets',            x: 9,  y: 5, w: 3, h: 5 },
-    { i: 'asset_utilization', x: 9,  y: 5, w: 3, h: 5 },
-    { i: 'ai_insights',       x: 0,  y: 10, w: 12, h: 12 },
+    { i: 'zone_map',          x: 0,  y: 5, w: 6, h: 6 },
+    { i: 'air_quality',       x: 6,  y: 5, w: 3, h: 5 },
+    { i: 'traffic',           x: 9,  y: 5, w: 3, h: 5 },
+    { i: 'safety',            x: 6,  y: 10, w: 3, h: 5 },
+    { i: 'assets',            x: 9,  y: 10, w: 3, h: 5 },
+    { i: 'ai_insights',       x: 0,  y: 11, w: 12, h: 12 },
   ],
   md: [
     { i: 'scorecard',   x: 0, y: 0, w: 4, h: 5 },
     { i: 'energy',      x: 4, y: 0, w: 4, h: 5 },
     { i: 'water',       x: 0, y: 5, w: 4, h: 5 },
     { i: 'waste',       x: 4, y: 5, w: 4, h: 5 },
-    { i: 'air_quality', x: 0, y: 10, w: 4, h: 5 },
-    { i: 'traffic',     x: 4, y: 10, w: 4, h: 5 },
-    { i: 'safety',      x: 0, y: 15, w: 4, h: 5 },
-    { i: 'assets',      x: 4, y: 15, w: 4, h: 5 },
-    { i: 'ai_insights', x: 0, y: 20, w: 8, h: 12 },
+    { i: 'zone_map',    x: 0, y: 10, w: 8, h: 6 },
+    { i: 'air_quality', x: 0, y: 16, w: 4, h: 5 },
+    { i: 'traffic',     x: 4, y: 16, w: 4, h: 5 },
+    { i: 'safety',      x: 0, y: 21, w: 4, h: 5 },
+    { i: 'assets',      x: 4, y: 21, w: 4, h: 5 },
+    { i: 'ai_insights', x: 0, y: 26, w: 8, h: 12 },
   ],
   sm: [
     { i: 'scorecard',   x: 0, y: 0,  w: 4, h: 5 },
     { i: 'energy',      x: 0, y: 5,  w: 4, h: 5 },
     { i: 'water',       x: 0, y: 10, w: 4, h: 5 },
     { i: 'waste',       x: 0, y: 15, w: 4, h: 5 },
-    { i: 'air_quality', x: 0, y: 20, w: 4, h: 5 },
-    { i: 'ai_insights', x: 0, y: 25, w: 4, h: 12 },
+    { i: 'zone_map',    x: 0, y: 20, w: 4, h: 6 },
+    { i: 'air_quality', x: 0, y: 26, w: 4, h: 5 },
+    { i: 'ai_insights', x: 0, y: 31, w: 4, h: 12 },
   ],
 }
 
@@ -118,7 +122,7 @@ function DashboardView() {
   const activeModules = activeFacility?.activeModules || storeActiveModules || [
     'energy', 'water', 'waste', 'traffic', 'safety', 'scorecard', 'air_quality'
   ]
-  const activePanels = [...activeModules.filter(m => PANEL_COMPONENTS[m]), 'ai_insights']
+  const activePanels = [...activeModules.filter(m => PANEL_COMPONENTS[m]), 'zone_map', 'ai_insights']
   const filteredLayouts = {
     lg: DEFAULT_LAYOUTS.lg.filter(l => activePanels.includes(l.i)),
     md: DEFAULT_LAYOUTS.md.filter(l => activePanels.includes(l.i)),
@@ -162,6 +166,13 @@ function DashboardView() {
                   return (
                     <div key="ai_insights" className="h-full">
                       <AIInsightPanel />
+                    </div>
+                  )
+                }
+                if (moduleId === 'zone_map') {
+                  return (
+                    <div key="zone_map" className="h-full">
+                      <ZoneMapPanel />
                     </div>
                   )
                 }
