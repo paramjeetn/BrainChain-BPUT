@@ -1,0 +1,323 @@
+{
+  "bput-campus": {
+    "admin": [
+      {
+        "id": "bput-adm-1",
+        "facilityId": "bput-campus",
+        "role": "admin",
+        "module": "energy",
+        "severity": "high",
+        "text": "Sustainability score 71 — energy in Block B is 23% above baseline. Schedule HVAC audit this week.",
+        "action": "Schedule HVAC audit for Block B",
+        "confidence": 0.89,
+        "model_basis": "Z-score + linear forecast"
+      },
+      {
+        "id": "bput-adm-2",
+        "facilityId": "bput-campus",
+        "role": "admin",
+        "module": "waste",
+        "severity": "medium",
+        "text": "Waste bin overflow predicted in Canteen zone in 6 hours based on current fill rate.",
+        "action": "Dispatch Canteen collection crew",
+        "confidence": 0.92,
+        "model_basis": "LinearTrend fill forecast"
+      },
+      {
+        "id": "bput-adm-3",
+        "facilityId": "bput-campus",
+        "role": "admin",
+        "module": "energy",
+        "severity": "high",
+        "text": "Campus peak electrical draw at 11:30 AM is within 5% of sanctioned contract demand. Shift mechanical workshop labs to afternoon slots.",
+        "action": "Shift mechanical workshop labs to afternoon slots",
+        "confidence": 0.86,
+        "model_basis": "Peak demand threshold monitor"
+      }
+    ],
+    "operations": [
+      {
+        "id": "bput-ops-1",
+        "facilityId": "bput-campus",
+        "role": "operations",
+        "module": "energy",
+        "severity": "high",
+        "text": "Block B HVAC running at full load despite 40% occupancy. Reduce to 60% capacity.",
+        "action": "Reduce Block B HVAC to 60% capacity",
+        "confidence": 0.91,
+        "model_basis": "Occupancy-load correlation model"
+      },
+      {
+        "id": "bput-ops-2",
+        "facilityId": "bput-campus",
+        "role": "operations",
+        "module": "waste",
+        "severity": "medium",
+        "text": "Canteen bin at 87% — dispatch collection team now.",
+        "action": "Dispatch waste collection team to Canteen",
+        "confidence": 0.95,
+        "model_basis": "Ultrasonic fill level threshold"
+      },
+      {
+        "id": "bput-ops-3",
+        "facilityId": "bput-campus",
+        "role": "operations",
+        "module": "assets",
+        "severity": "high",
+        "text": "Substation transformer oil temperature warning in Block C switchyard requires physical inspection before evening peak load.",
+        "action": "Inspect Block C switchyard transformer",
+        "confidence": 0.88,
+        "model_basis": "Thermal anomaly detection"
+      }
+    ],
+    "sustainability": [
+      {
+        "id": "bput-sust-1",
+        "facilityId": "bput-campus",
+        "role": "sustainability",
+        "module": "scorecard",
+        "severity": "low",
+        "text": "Campus CO₂ avoided this month: 2.4 tonnes. On track for 15% annual reduction target.",
+        "action": "Log Scope 2 emissions reduction certificate",
+        "confidence": 0.96,
+        "model_basis": "Cross-module ESG aggregation"
+      },
+      {
+        "id": "bput-sust-2",
+        "facilityId": "bput-campus",
+        "role": "sustainability",
+        "module": "energy",
+        "severity": "info",
+        "text": "Solar potential: 18% of current grid draw could be offset with rooftop installation on Block A.",
+        "action": "Commission Block A solar rooftop feasibility study",
+        "confidence": 0.84,
+        "model_basis": "Solar irradiance + yield model"
+      },
+      {
+        "id": "bput-sust-3",
+        "facilityId": "bput-campus",
+        "role": "sustainability",
+        "module": "waste",
+        "severity": "low",
+        "text": "Canteen organic waste composter operating at 82% efficiency, producing 450 kg of organic compost for botanical lawns.",
+        "action": "Schedule compost distribution to botanical lawns",
+        "confidence": 0.90,
+        "model_basis": "Composter throughput telemetry"
+      }
+    ]
+  },
+  "kims-hospital": {
+    "admin": [
+      {
+        "id": "kims-adm-1",
+        "facilityId": "kims-hospital",
+        "role": "admin",
+        "module": "scorecard",
+        "severity": "low",
+        "text": "Hospital sustainability score is 81 (improving) — biomedical waste segregation compliance reached 99.4%, exceeding statutory pollution norms.",
+        "action": "Publish monthly Bio-Hazard compliance report",
+        "confidence": 0.98,
+        "model_basis": "Biomedical compliance audit engine"
+      },
+      {
+        "id": "kims-adm-2",
+        "facilityId": "kims-hospital",
+        "role": "admin",
+        "module": "air_quality",
+        "severity": "high",
+        "text": "OPD air quality anomaly: AQI spiked to 178 during peak visiting hours. Recommend air filtration system upgrade and visitor flow pacing.",
+        "action": "Upgrade OPD filtration & pace visitor ingress",
+        "confidence": 0.93,
+        "model_basis": "Z-score anomaly detection"
+      },
+      {
+        "id": "kims-adm-3",
+        "facilityId": "kims-hospital",
+        "role": "admin",
+        "module": "energy",
+        "severity": "medium",
+        "text": "Critical ICU continuous power demand consumes 42% of campus electricity budget; evaluate microgrid battery backup to shave peak tariff charges.",
+        "action": "Evaluate microgrid battery backup for ICU",
+        "confidence": 0.87,
+        "model_basis": "LinearTrend tariff optimizer"
+      }
+    ],
+    "operations": [
+      {
+        "id": "kims-ops-1",
+        "facilityId": "kims-hospital",
+        "role": "operations",
+        "module": "air_quality",
+        "severity": "high",
+        "text": "OPD AHU filter pressure differential is elevated; replace secondary MERV-14 filters to reduce particulate ingress before next OPD cycle.",
+        "action": "Replace OPD MERV-14 secondary filters",
+        "confidence": 0.94,
+        "model_basis": "Pressure differential sensor"
+      },
+      {
+        "id": "kims-ops-2",
+        "facilityId": "kims-hospital",
+        "role": "operations",
+        "module": "water",
+        "severity": "high",
+        "text": "Overhead water tank in Ward A experienced night-time anomaly drain (4,820 L). Automated shutoff valve test recommended immediately.",
+        "action": "Test Ward A automated shutoff valve",
+        "confidence": 0.95,
+        "model_basis": "Z-score anomaly detection"
+      },
+      {
+        "id": "kims-ops-3",
+        "facilityId": "kims-hospital",
+        "role": "operations",
+        "module": "waste",
+        "severity": "high",
+        "text": "ICU biomedical waste bin reached 91% capacity in Pod 2. Dispatch bio-hazard certified collection team immediately to prevent regulatory breach.",
+        "action": "Dispatch bio-hazard collection team to Pod 2",
+        "confidence": 0.97,
+        "model_basis": "Hazardous bin fill telemetry"
+      }
+    ],
+    "sustainability": [
+      {
+        "id": "kims-sust-1",
+        "facilityId": "kims-hospital",
+        "role": "sustainability",
+        "module": "scorecard",
+        "severity": "low",
+        "text": "Hospital CO₂ avoided this month reached 4.1 tonnes with heat recovery chillers supplying 65% of domestic hot water requirements.",
+        "action": "Record chiller heat recovery yield in ESG portal",
+        "confidence": 0.95,
+        "model_basis": "Thermal recovery calculator"
+      },
+      {
+        "id": "kims-sust-2",
+        "facilityId": "kims-hospital",
+        "role": "sustainability",
+        "module": "waste",
+        "severity": "info",
+        "text": "Biomedical waste autoclave diversion rate improved to 85%, cutting hazardous incineration emissions by 12% quarter-on-quarter.",
+        "action": "File quarterly diversion report with SPCB",
+        "confidence": 0.91,
+        "model_basis": "Autoclave diversion tracking"
+      },
+      {
+        "id": "kims-sust-3",
+        "facilityId": "kims-hospital",
+        "role": "sustainability",
+        "module": "water",
+        "severity": "low",
+        "text": "Water recycling efficiency: Sewage Treatment Plant (STP) effluent meets grade-1 non-potable standards; 52,000 L reused for landscaping.",
+        "action": "Route STP effluent to cooling tower makeup circuit",
+        "confidence": 0.93,
+        "model_basis": "STP water recycling monitor"
+      }
+    ]
+  },
+  "tcs-campus": {
+    "admin": [
+      {
+        "id": "tcs-adm-1",
+        "facilityId": "tcs-campus",
+        "role": "admin",
+        "module": "scorecard",
+        "severity": "low",
+        "text": "Campus ESG scorecard reached 88 (Grade A) — energy intensity per seat dropped 14% below FY26 corporate institutional benchmark.",
+        "action": "Submit FY26 corporate ESG milestone filing",
+        "confidence": 0.97,
+        "model_basis": "Benchmarking engine"
+      },
+      {
+        "id": "tcs-adm-2",
+        "facilityId": "tcs-campus",
+        "role": "admin",
+        "module": "energy",
+        "severity": "info",
+        "text": "Data center PUE (Power Usage Effectiveness) stands at 1.42; server room cooling optimization has cut monthly utility bills by ₹3.8 Lakhs.",
+        "action": "Lock in CRAC variable airflow setpoints",
+        "confidence": 0.92,
+        "model_basis": "PUE optimization model"
+      },
+      {
+        "id": "tcs-adm-3",
+        "facilityId": "tcs-campus",
+        "role": "admin",
+        "module": "traffic",
+        "severity": "medium",
+        "text": "Peak traffic congestion detected at North Gate (99% capacity at 9:15 AM); stagger department shift start times between 8:30 AM and 9:30 AM.",
+        "action": "Stagger department shift start times",
+        "confidence": 0.89,
+        "model_basis": "Gate queue congestion forecaster"
+      }
+    ],
+    "operations": [
+      {
+        "id": "tcs-ops-1",
+        "facilityId": "tcs-campus",
+        "role": "operations",
+        "module": "energy",
+        "severity": "medium",
+        "text": "Tower 1 AHU-2 unit is offline since scheduled maintenance; redistribute airflow from AHU-1 to prevent floor hot spots on levels 3–5.",
+        "action": "Redistribute AHU-1 duct airflow to levels 3-5",
+        "confidence": 0.90,
+        "model_basis": "Airflow differential model"
+      },
+      {
+        "id": "tcs-ops-2",
+        "facilityId": "tcs-campus",
+        "role": "operations",
+        "module": "assets",
+        "severity": "high",
+        "text": "Server Room CRAC #2 dual-power transfer alert logged; inspect automatic transfer switch contacts and UPS battery health.",
+        "action": "Inspect ATS contacts and UPS battery bank",
+        "confidence": 0.94,
+        "model_basis": "Dual-power transfer telemetry"
+      },
+      {
+        "id": "tcs-ops-3",
+        "facilityId": "tcs-campus",
+        "role": "operations",
+        "module": "waste",
+        "severity": "medium",
+        "text": "Cafeteria general waste bins reaching 72% fill by 4:00 PM; initiate secondary custodial route prior to evening shift dinner service.",
+        "action": "Initiate secondary custodial sweep at 4:30 PM",
+        "confidence": 0.88,
+        "model_basis": "LinearTrend fill forecast"
+      }
+    ],
+    "sustainability": [
+      {
+        "id": "tcs-sust-1",
+        "facilityId": "tcs-campus",
+        "role": "sustainability",
+        "module": "energy",
+        "severity": "low",
+        "text": "Rooftop 250 kW solar array generated 31,500 kWh this billing period, offsetting 24.5 tonnes of Scope 2 grid greenhouse gas emissions.",
+        "action": "Verify RECs generation credits",
+        "confidence": 0.99,
+        "model_basis": "Solar generation solarimeter"
+      },
+      {
+        "id": "tcs-sust-2",
+        "facilityId": "tcs-campus",
+        "role": "sustainability",
+        "module": "water",
+        "severity": "low",
+        "text": "Campus rainwater harvesting recharge pits operating at 91% efficiency following recent showers; 168,000 L stored for cooling towers.",
+        "action": "Transfer harvested rainwater to cooling circuit",
+        "confidence": 0.92,
+        "model_basis": "Hydro-pit capacitance monitor"
+      },
+      {
+        "id": "tcs-sust-3",
+        "facilityId": "tcs-campus",
+        "role": "sustainability",
+        "module": "waste",
+        "severity": "info",
+        "text": "Single-use plastic elimination policy achieved 94% compliance across campus food courts and vendor cafeterias.",
+        "action": "Issue compliance audit to food court vendors",
+        "confidence": 0.94,
+        "model_basis": "Vendor packaging audit score"
+      }
+    ]
+  }
+}

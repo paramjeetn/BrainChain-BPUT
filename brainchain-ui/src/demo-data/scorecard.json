@@ -1,0 +1,290 @@
+[
+  {
+    "facility_id": "bput-campus",
+    "score": 64,
+    "energy_score": 62,
+    "water_score": 65,
+    "waste_score": 66,
+    "air_score": 72,
+    "trend": "improving",
+    "month": "2026-04",
+    "breakdown": {
+      "energy_saved_kwh": 3800,
+      "water_saved_liters": 45000,
+      "waste_diverted_pct": 52.0,
+      "co2_avoided_kg": 1800
+    }
+  },
+  {
+    "facility_id": "bput-campus",
+    "score": 66,
+    "energy_score": 63,
+    "water_score": 68,
+    "waste_score": 68,
+    "air_score": 74,
+    "trend": "improving",
+    "month": "2026-05",
+    "breakdown": {
+      "energy_saved_kwh": 4100,
+      "water_saved_liters": 48000,
+      "waste_diverted_pct": 54.5,
+      "co2_avoided_kg": 1950
+    }
+  },
+  {
+    "facility_id": "bput-campus",
+    "score": 69,
+    "energy_score": 67,
+    "water_score": 70,
+    "waste_score": 71,
+    "air_score": 75,
+    "trend": "improving",
+    "month": "2026-06",
+    "breakdown": {
+      "energy_saved_kwh": 4600,
+      "water_saved_liters": 52000,
+      "waste_diverted_pct": 58.0,
+      "co2_avoided_kg": 2150
+    }
+  },
+  {
+    "facility_id": "bput-campus",
+    "score": 72,
+    "energy_score": 71,
+    "water_score": 72,
+    "waste_score": 73,
+    "air_score": 76,
+    "trend": "improving",
+    "month": "2026-07",
+    "breakdown": {
+      "energy_saved_kwh": 5100,
+      "water_saved_liters": 56000,
+      "waste_diverted_pct": 61.5,
+      "co2_avoided_kg": 2350
+    }
+  },
+  {
+    "facility_id": "bput-campus",
+    "score": 73,
+    "energy_score": 72,
+    "water_score": 74,
+    "waste_score": 74,
+    "air_score": 77,
+    "trend": "improving",
+    "month": "2026-08",
+    "breakdown": {
+      "energy_saved_kwh": 5300,
+      "water_saved_liters": 58000,
+      "waste_diverted_pct": 63.0,
+      "co2_avoided_kg": 2420
+    }
+  },
+  {
+    "facility_id": "bput-campus",
+    "score": 71,
+    "energy_score": 68,
+    "water_score": 73,
+    "waste_score": 73,
+    "air_score": 76,
+    "trend": "declining",
+    "month": "2026-09",
+    "breakdown": {
+      "energy_saved_kwh": 5050,
+      "water_saved_liters": 57000,
+      "waste_diverted_pct": 62.0,
+      "co2_avoided_kg": 2400
+    }
+  },
+  {
+    "facility_id": "kims-hospital",
+    "score": 74,
+    "energy_score": 69,
+    "water_score": 76,
+    "waste_score": 80,
+    "air_score": 82,
+    "trend": "stable",
+    "month": "2026-04",
+    "breakdown": {
+      "energy_saved_kwh": 6800,
+      "water_saved_liters": 82000,
+      "waste_diverted_pct": 74.0,
+      "co2_avoided_kg": 3200
+    }
+  },
+  {
+    "facility_id": "kims-hospital",
+    "score": 75,
+    "energy_score": 71,
+    "water_score": 77,
+    "waste_score": 81,
+    "air_score": 83,
+    "trend": "improving",
+    "month": "2026-05",
+    "breakdown": {
+      "energy_saved_kwh": 7100,
+      "water_saved_liters": 86000,
+      "waste_diverted_pct": 75.5,
+      "co2_avoided_kg": 3350
+    }
+  },
+  {
+    "facility_id": "kims-hospital",
+    "score": 76,
+    "energy_score": 72,
+    "water_score": 78,
+    "waste_score": 82,
+    "air_score": 84,
+    "trend": "improving",
+    "month": "2026-06",
+    "breakdown": {
+      "energy_saved_kwh": 7400,
+      "water_saved_liters": 90000,
+      "waste_diverted_pct": 77.0,
+      "co2_avoided_kg": 3500
+    }
+  },
+  {
+    "facility_id": "kims-hospital",
+    "score": 78,
+    "energy_score": 74,
+    "water_score": 80,
+    "waste_score": 84,
+    "air_score": 85,
+    "trend": "improving",
+    "month": "2026-07",
+    "breakdown": {
+      "energy_saved_kwh": 7900,
+      "water_saved_liters": 95000,
+      "waste_diverted_pct": 80.0,
+      "co2_avoided_kg": 3750
+    }
+  },
+  {
+    "facility_id": "kims-hospital",
+    "score": 79,
+    "energy_score": 76,
+    "water_score": 81,
+    "waste_score": 85,
+    "air_score": 86,
+    "trend": "improving",
+    "month": "2026-08",
+    "breakdown": {
+      "energy_saved_kwh": 8300,
+      "water_saved_liters": 98000,
+      "waste_diverted_pct": 82.0,
+      "co2_avoided_kg": 3900
+    }
+  },
+  {
+    "facility_id": "kims-hospital",
+    "score": 81,
+    "energy_score": 78,
+    "water_score": 83,
+    "waste_score": 87,
+    "air_score": 88,
+    "trend": "improving",
+    "month": "2026-09",
+    "breakdown": {
+      "energy_saved_kwh": 8700,
+      "water_saved_liters": 104000,
+      "waste_diverted_pct": 85.0,
+      "co2_avoided_kg": 4100
+    }
+  },
+  {
+    "facility_id": "tcs-campus",
+    "score": 82,
+    "energy_score": 80,
+    "water_score": 84,
+    "waste_score": 85,
+    "air_score": 86,
+    "trend": "improving",
+    "month": "2026-04",
+    "breakdown": {
+      "energy_saved_kwh": 11200,
+      "water_saved_liters": 135000,
+      "waste_diverted_pct": 82.0,
+      "co2_avoided_kg": 5100
+    }
+  },
+  {
+    "facility_id": "tcs-campus",
+    "score": 83,
+    "energy_score": 81,
+    "water_score": 85,
+    "waste_score": 86,
+    "air_score": 87,
+    "trend": "improving",
+    "month": "2026-05",
+    "breakdown": {
+      "energy_saved_kwh": 11800,
+      "water_saved_liters": 142000,
+      "waste_diverted_pct": 84.0,
+      "co2_avoided_kg": 5350
+    }
+  },
+  {
+    "facility_id": "tcs-campus",
+    "score": 85,
+    "energy_score": 84,
+    "water_score": 87,
+    "waste_score": 88,
+    "air_score": 88,
+    "trend": "improving",
+    "month": "2026-06",
+    "breakdown": {
+      "energy_saved_kwh": 12400,
+      "water_saved_liters": 148000,
+      "waste_diverted_pct": 86.5,
+      "co2_avoided_kg": 5600
+    }
+  },
+  {
+    "facility_id": "tcs-campus",
+    "score": 86,
+    "energy_score": 85,
+    "water_score": 88,
+    "waste_score": 89,
+    "air_score": 89,
+    "trend": "improving",
+    "month": "2026-07",
+    "breakdown": {
+      "energy_saved_kwh": 13100,
+      "water_saved_liters": 154000,
+      "waste_diverted_pct": 88.0,
+      "co2_avoided_kg": 5850
+    }
+  },
+  {
+    "facility_id": "tcs-campus",
+    "score": 87,
+    "energy_score": 86,
+    "water_score": 89,
+    "waste_score": 90,
+    "air_score": 90,
+    "trend": "improving",
+    "month": "2026-08",
+    "breakdown": {
+      "energy_saved_kwh": 13600,
+      "water_saved_liters": 160000,
+      "waste_diverted_pct": 89.5,
+      "co2_avoided_kg": 6100
+    }
+  },
+  {
+    "facility_id": "tcs-campus",
+    "score": 88,
+    "energy_score": 88,
+    "water_score": 90,
+    "waste_score": 91,
+    "air_score": 91,
+    "trend": "improving",
+    "month": "2026-09",
+    "breakdown": {
+      "energy_saved_kwh": 14200,
+      "water_saved_liters": 168000,
+      "waste_diverted_pct": 91.0,
+      "co2_avoided_kg": 6300
+    }
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "inc-bput-01",
+    "facility_id": "bput-campus",
+    "timestamp": "2026-09-07T10:30:00Z",
+    "zone_id": "Block A",
+    "incident_type": "fire_drill",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Scheduled semester fire evacuation drill conducted successfully in Block A. Evacuation time: 4m 12s."
+  },
+  {
+    "id": "inc-bput-02",
+    "facility_id": "bput-campus",
+    "timestamp": "2026-09-08T13:15:00Z",
+    "zone_id": "Canteen",
+    "incident_type": "slip_fall",
+    "severity": "medium",
+    "status": "resolved",
+    "description": "Student slipped on spilled water near wash basin in Canteen. First aid provided, wet floor signage placed."
+  },
+  {
+    "id": "inc-bput-03",
+    "facility_id": "bput-campus",
+    "timestamp": "2026-09-09T16:45:00Z",
+    "zone_id": "Block B",
+    "incident_type": "electrical",
+    "severity": "medium",
+    "status": "monitoring",
+    "description": "Short circuit tripped MCB on Block B 2nd floor computer lab. Faulty circuit replaced and load tested."
+  },
+  {
+    "id": "inc-bput-04",
+    "facility_id": "bput-campus",
+    "timestamp": "2026-09-10T11:20:00Z",
+    "zone_id": "Library",
+    "incident_type": "medical_emergency",
+    "severity": "medium",
+    "status": "resolved",
+    "description": "Student collapsed due to dehydration in quiet study hall. Campus medical team attended and stabilized."
+  },
+  {
+    "id": "inc-bput-05",
+    "facility_id": "bput-campus",
+    "timestamp": "2026-09-11T21:40:00Z",
+    "zone_id": "Parking Lot",
+    "incident_type": "security",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Unauthorized vehicle spotted near perimeter gate 3 after hours. Security verified student identity and escorted."
+  },
+  {
+    "id": "inc-bput-06",
+    "facility_id": "bput-campus",
+    "timestamp": "2026-09-12T14:10:00Z",
+    "zone_id": "Block C",
+    "incident_type": "electrical",
+    "severity": "high",
+    "status": "open",
+    "description": "Substation transformer oil temperature warning alarm triggered in Block C switchyard. Maintenance team on-site investigating."
+  },
+  {
+    "id": "inc-bput-07",
+    "facility_id": "bput-campus",
+    "timestamp": "2026-09-13T09:00:00Z",
+    "zone_id": "Block A",
+    "incident_type": "security",
+    "severity": "low",
+    "status": "monitoring",
+    "description": "CCTV camera #4 blind spot reported near emergency stairway. Relocation scheduled."
+  },
+  {
+    "id": "inc-kims-01",
+    "facility_id": "kims-hospital",
+    "timestamp": "2026-09-07T08:15:00Z",
+    "zone_id": "ICU",
+    "incident_type": "medical_emergency",
+    "severity": "high",
+    "status": "resolved",
+    "description": "Code Blue activated in ICU Pod 3. Resuscitation team responded in 90 seconds. Patient stabilized."
+  },
+  {
+    "id": "inc-kims-02",
+    "facility_id": "kims-hospital",
+    "timestamp": "2026-09-08T11:30:00Z",
+    "zone_id": "OPD",
+    "incident_type": "slip_fall",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Elderly visitor lost balance on entrance ramp in OPD. Wheelchair assistance provided; non-slip tread re-inspected."
+  },
+  {
+    "id": "inc-kims-03",
+    "facility_id": "kims-hospital",
+    "timestamp": "2026-09-09T02:45:00Z",
+    "zone_id": "Ward A",
+    "incident_type": "electrical",
+    "severity": "medium",
+    "status": "resolved",
+    "description": "Backup UPS phase fluctuation detected in Ward A corridor. Generator auto-transfer switch tested and confirmed normal."
+  },
+  {
+    "id": "inc-kims-04",
+    "facility_id": "kims-hospital",
+    "timestamp": "2026-09-10T14:00:00Z",
+    "zone_id": "Pharmacy",
+    "incident_type": "security",
+    "severity": "medium",
+    "status": "monitoring",
+    "description": "Discrepancy in narcotic storage logbook entry during shift handover. CCTV footage under review by pharmacy head."
+  },
+  {
+    "id": "inc-kims-05",
+    "facility_id": "kims-hospital",
+    "timestamp": "2026-09-11T10:00:00Z",
+    "zone_id": "Ward B",
+    "incident_type": "fire_drill",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Quarterly smoke detector sensitivity test and fire alarm drill conducted in Ward B utility shafts."
+  },
+  {
+    "id": "inc-kims-06",
+    "facility_id": "kims-hospital",
+    "timestamp": "2026-09-12T19:20:00Z",
+    "zone_id": "ICU",
+    "incident_type": "medical_emergency",
+    "severity": "high",
+    "status": "monitoring",
+    "description": "High-pressure oxygen manifold line secondary sensor alarm triggered. Switchover to liquid oxygen backup verified."
+  },
+  {
+    "id": "inc-kims-07",
+    "facility_id": "kims-hospital",
+    "timestamp": "2026-09-13T12:30:00Z",
+    "zone_id": "Parking",
+    "incident_type": "security",
+    "severity": "low",
+    "status": "open",
+    "description": "Ambulance bay blocked by unregistered delivery van. Tow truck summoned and warning issued."
+  },
+  {
+    "id": "inc-tcs-01",
+    "facility_id": "tcs-campus",
+    "timestamp": "2026-09-07T15:00:00Z",
+    "zone_id": "Tower 1",
+    "incident_type": "fire_drill",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Campus-wide fire warden evacuation drill for floors 1 to 5. 650 employees evacuated in 5m 30s."
+  },
+  {
+    "id": "inc-tcs-02",
+    "facility_id": "tcs-campus",
+    "timestamp": "2026-09-08T18:45:00Z",
+    "zone_id": "Cafeteria",
+    "incident_type": "slip_fall",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Beverage spill in dish collection area. Custodial team cleaned and sanitized floor."
+  },
+  {
+    "id": "inc-tcs-03",
+    "facility_id": "tcs-campus",
+    "timestamp": "2026-09-09T11:10:00Z",
+    "zone_id": "Server Room",
+    "incident_type": "electrical",
+    "severity": "high",
+    "status": "monitoring",
+    "description": "In-row CRAC #2 power supply unit dual-feed transfer glitch. Server room temp rose to 24°C; backup chiller engaged."
+  },
+  {
+    "id": "inc-tcs-04",
+    "facility_id": "tcs-campus",
+    "timestamp": "2026-09-10T22:15:00Z",
+    "zone_id": "Parking",
+    "incident_type": "security",
+    "severity": "low",
+    "status": "resolved",
+    "description": "Automated license plate reader camera offline at North Gate entrance. Network switch rebooted."
+  },
+  {
+    "id": "inc-tcs-05",
+    "facility_id": "tcs-campus",
+    "timestamp": "2026-09-11T16:20:00Z",
+    "zone_id": "Tower 2",
+    "incident_type": "medical_emergency",
+    "severity": "medium",
+    "status": "resolved",
+    "description": "Associate experienced acute vertigo in Tower 2 4th floor workspace. Onsite occupational health nurse responded."
+  },
+  {
+    "id": "inc-tcs-06",
+    "facility_id": "tcs-campus",
+    "timestamp": "2026-09-12T10:05:00Z",
+    "zone_id": "Server Room",
+    "incident_type": "security",
+    "severity": "medium",
+    "status": "open",
+    "description": "Multiple invalid badge tap attempts at Server Room biometric airlock door #3. Security team reviewing access logs."
+  }
+]

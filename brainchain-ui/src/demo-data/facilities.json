@@ -1,0 +1,29 @@
+[
+  {
+    "id": "bput-campus",
+    "name": "BPUT Engineering Campus",
+    "type": "college",
+    "location": "Rourkela, Odisha",
+    "zones": ["Block A", "Block B", "Block C", "Library", "Parking Lot", "Canteen"],
+    "activeModules": ["energy", "water", "waste", "traffic", "safety", "scorecard"],
+    "coordinates": { "lat": 22.253, "lng": 84.901 }
+  },
+  {
+    "id": "kims-hospital",
+    "name": "KIMS Hospital",
+    "type": "hospital",
+    "location": "Bhubaneswar, Odisha",
+    "zones": ["ICU", "OPD", "Ward A", "Ward B", "Pharmacy", "Parking"],
+    "activeModules": ["air_quality", "energy", "water", "waste", "safety", "assets", "scorecard"],
+    "coordinates": { "lat": 20.3533, "lng": 85.8164 }
+  },
+  {
+    "id": "tcs-campus",
+    "name": "TCS Tech Campus",
+    "type": "corporate",
+    "location": "Bhubaneswar, Odisha",
+    "zones": ["Tower 1", "Tower 2", "Cafeteria", "Server Room", "Parking"],
+    "activeModules": ["energy", "water", "waste", "assets", "scorecard"],
+    "coordinates": { "lat": 20.301, "lng": 85.8245 }
+  }
+]
