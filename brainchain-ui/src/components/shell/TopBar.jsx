@@ -353,17 +353,6 @@ export default function TopBar() {
                   </div>
                 </div>
 
-                {/* Actions */}
-                <div>
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Organization</p>
-                  <button
-                    onClick={handleResetOnboarding}
-                    className="w-full flex items-center gap-3 p-3 rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50 text-gray-700 hover:text-emerald-800 text-sm font-medium transition-all"
-                  >
-                    <RotateCcw className="w-4 h-4 shrink-0" />
-                    Register New Organization
-                  </button>
-                </div>
               </div>
             </motion.div>
           </>

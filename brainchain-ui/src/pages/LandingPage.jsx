@@ -65,16 +65,16 @@ export default function LandingPage() {
         </div>
         <div className="flex items-center gap-3">
           <button
-            onClick={() => navigate('/register')}
+            onClick={() => navigate('/dashboard')}
             className="text-sm font-semibold text-gray-600 hover:text-gray-900 px-4 py-2 rounded-lg hover:bg-gray-100 transition-all"
           >
-            Sign In
+            Dashboard
           </button>
           <button
-            onClick={() => navigate('/register')}
+            onClick={() => navigate('/dashboard')}
             className="text-sm font-bold bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-500 shadow-sm shadow-emerald-200 transition-all flex items-center gap-1.5"
           >
-            Get Started <ArrowRight className="w-3.5 h-3.5" />
+            Launch Dashboard <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
       </nav>
@@ -95,10 +95,10 @@ export default function LandingPage() {
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <button
-              onClick={() => navigate('/register')}
+              onClick={() => navigate('/dashboard')}
               className="px-7 py-3.5 bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-500 transition-all text-base flex items-center gap-2"
             >
-              Register your Facility <ArrowRight className="w-4 h-4" />
+              Open Dashboard <ArrowRight className="w-4 h-4" />
             </button>
             <button
               onClick={handleLiveDemo}
@@ -219,10 +219,10 @@ export default function LandingPage() {
           <h2 className="text-4xl font-black text-gray-900 mb-4">Ready to make your facility intelligent?</h2>
           <p className="text-gray-500 text-lg mb-8">Register your organization in under 2 minutes. No hardware required to start.</p>
           <button
-            onClick={() => navigate('/register')}
+            onClick={() => navigate('/dashboard')}
             className="px-8 py-4 bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-200 hover:bg-emerald-500 transition-all text-lg flex items-center gap-2 mx-auto"
           >
-            Get Started Free <ArrowRight className="w-5 h-5" />
+            Launch Dashboard <ArrowRight className="w-5 h-5" />
           </button>
           <div className="mt-6 flex items-center justify-center gap-6 text-sm text-gray-400">
             {['No credit card', 'Local SQLite DB', 'Open source'].map(t => (
