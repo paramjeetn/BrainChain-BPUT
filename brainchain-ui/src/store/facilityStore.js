@@ -16,7 +16,7 @@ export const useFacilityStore = create(
       facilityType: DEFAULT_PRESET.id,
       facilityName: DEFAULT_PRESET.defaultName,
       location: DEFAULT_PRESET.defaultLocation,
-      isOnboarded: false,
+      isOnboarded: true,
       currentView: 'dashboard', // 'dashboard' | 'configure' | 'onboarding'
 
       // Active Modules (Array of module id strings)
